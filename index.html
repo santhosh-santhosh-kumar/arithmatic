@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{
+          margin-left: 450px;
+          margin-top: 150px;
+          color:white;
+          background-color: bisque;
+        }
+    h1{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    input{
+        width: 80px;
+        margin-top: 30px;
+        height: 25px;
+        border-radius: 5px;
+
+    }
+    label{
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 15px;
+       text-transform: capitalize; 
+       margin-right: 10px;
+    }
+    .child{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .parent{
+        width: 400px;
+        border-radius: 10px;
+        height: 400px;
+        background-color: black;
+        
+    }
+    .input{
+        text-align: center;
+    }
+    button{
+        height: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+        font-weight: bold;
+        margin-bottom: 40px;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+    #result{
+        height: 40px;
+        width: 100px;
+        margin-left: 170px;
+        margin-top: 30px;
+        border-radius: 5px;
+        font-size: 50px;
+     }
+    
+    </style>
+</head>
+<body>
+    <div class="parent" id="parent">
+        <div class="head">
+            <h1>arithmatic operation</h1>
+        </div>
+        <div class="input">
+            <label for="num">enter num1:</label>
+            <input type="text" id="num1">
+            <label for="num">enter num2:</label>
+            <input type="text" id="num2"><br>
+        </div>
+        <div id="result"></div>
+        <div class="child">
+            <button type="button" onclick="add()">addition</button>
+            <button type="button" onclick="sub()">substraction</button>
+            <button type="button" onclick="mul()">multiplication</button>
+            <button type="button" onclick="div()">division</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
